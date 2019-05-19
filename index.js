@@ -40,7 +40,6 @@ function serveContent(url, callback) {
 
 function serveFile(url, callback) {
   let index = 0;
-  let found = false;
   let data, err;
 
   for (index = 0; index < pages.length; index++) {
