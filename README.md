@@ -1,7 +1,7 @@
 # Minimal Webserver
 This webserver serves files if they exist in the **/public** folder.
 
-## What does it work ?
+## How does it work ?
 When you demand a path, the Werbserver is going to check if it exists. If so, it is going to distribute the associated file.
 
 For example:
