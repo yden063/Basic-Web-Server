@@ -10,7 +10,6 @@ class WebServer {
     http.createServer((req, res) => {
       this.serveFile(req.url, (data, err) => {
         if (err) {
-          console.log('error ' + err);
           res.end(err.message);
           return;
         }
