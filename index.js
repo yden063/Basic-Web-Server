@@ -58,8 +58,8 @@ class WebServer {
 
     // Looking for static files
     try {
-      const filename = url.split('/')[1];
-      data = fs.readFileSync(filename, 'utf8');
+      const realPath = url.substring(1);
+      data = fs.readFileSync(realPath, 'utf8');
       return callback(data, null);
     } catch (error) {
       // The path and static file don't exist at all
