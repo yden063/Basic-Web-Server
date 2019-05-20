@@ -18,3 +18,8 @@ If the path exist but the file is not found, it is going to send a error and sti
 If the path doesn't exist (e.g: /public/index.html), the Webserver is going to check the static files. In order to be sent, the file must exist.
 
 Finally, if the file doesn't exist, the Webserver propagate an error, and the error is displayed. 
+
+Then you make the Webserver listening on a specific port for incoming requests using:
+```javascript
+webServer.start(6473);
+```
